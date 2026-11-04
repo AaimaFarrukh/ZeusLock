@@ -1,0 +1,914 @@
+{
+  "prompts": 50,
+  "alerts": 37,
+  "decision_accuracy": 0.96,
+  "latency_ms": {
+    "mean": 366.10838800006604,
+    "p50": 0.7242499996209517,
+    "p95": 1696.2819000000309
+  },
+  "category_metrics": {
+    "PAYMENT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CREDENTIAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "NETWORK": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889
+    },
+    "CONTACT": {
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1": 0.8888888888888888
+    },
+    "GOV_ID": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666
+    },
+    "SOURCE_CODE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "dev-001",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 26,
+            "end": 45,
+            "value": "4838 5608 9441 5465"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-002",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 31,
+            "end": 47,
+            "value": "5122210425786511"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-003",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 31,
+            "end": 48,
+            "value": "3707-567293-46899"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-004",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 58,
+            "end": 91,
+            "value": "FR22 2207 1247 9329 1173 1767 902"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-005",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 47,
+            "end": 69,
+            "value": "DE32311651136943514948"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-006",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 49,
+            "end": 91,
+            "value": "0x8618b421bfe4a01c9bd2ba46c526299d59b7f998"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-007",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 28,
+            "end": 70,
+            "value": "bc1qrchr74k5pxp9r7hl406mduzgypejq53xp9dk94"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-008",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 47,
+            "end": 87,
+            "value": "ghp_qlfdzccIxspgpXi7gehOkOPiFJ8o2zDUt4Ym"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-009",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 69,
+            "end": 89,
+            "value": "AKIANRCBDKPIFERSPSOC"
+          },
+          {
+            "category": "CREDENTIAL",
+            "start": 112,
+            "end": 152,
+            "value": "977UUFv2Qu19SbirbzhIfbgNkGYUgsLS++uY9KnL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-010",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 57,
+            "end": 63,
+            "value": "Bearer"
+          },
+          {
+            "category": "CREDENTIAL",
+            "start": 64,
+            "end": 120,
+            "value": "sk-proj-oEpAewMae7u524Vki1EucGU2dhc1n4mKYzcCCzVNBrE_7gP6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-011",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 75,
+            "end": 86,
+            "value": "Tr0ub4dor&3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-012",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 31,
+            "end": 52,
+            "value": "Soleil-Marseille-2026"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-013",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 12,
+            "end": 27,
+            "value": "Rojo#Valencia77"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-014",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 92,
+            "end": 103,
+            "value": "Biscuit2019"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-015",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 44,
+            "end": 50,
+            "value": "Bearer"
+          },
+          {
+            "category": "CREDENTIAL",
+            "start": 51,
+            "end": 194,
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4ODQxIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzk4MDAwMDAwfQ._372Y_0Rwy8-O-kqYhfzLdlWWgD1SFR3rjGCxk519QU"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-016",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 53,
+            "end": 504,
+            "value": "-----BEGIN RSA PRIVATE KEY-----\nt50Y/midDZs9dCwg6YvM2baoiTXSEufiG+nYQtVVgibHktB85FTtsMzLxwJ8CNJT\nNYckBggBnBFTK2a4tymMjKD/ui67Dn3oD6nD7RHchFMUjPIxjoL494XowGmNGkYj\ncieiWiKbKVCEWPa5OR6vVPQxWrYJGWSj9Uk73GDTBqeWj5vjdiNcL22Lt+5VFmCO\n0ku9cgN71QleQCf8GfenMkg7rHVuqeBBfK6+2QIdI9QTywuwui14/oFiNLKk9ve7\ns0IjKXyoABex1bgarYd+IdNJ+nJWKifnXMJWkiT4VwsvT0/Zaxge5i9Ft/cgm1nl\n1kOOCIpk8XK0Y26A+lRZCoAspUwGo8NBrStMeKygPdQnXM4mnKYkEUC3B0BYtxEe\n-----END RSA PRIVATE KEY-----"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-017",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 37,
+            "end": 99,
+            "value": "mysql://billing:HNnKBXzkjXmj@db-prod-02.internal:3306/invoices"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-018",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 49,
+            "end": 86,
+            "value": "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"
+          },
+          {
+            "category": "CREDENTIAL",
+            "start": 105,
+            "end": 162,
+            "value": "postgresql://app:WN4IhzTiGwEelA@10.20.0.15:5432/analytics"
+          },
+          {
+            "category": "NETWORK",
+            "start": 137,
+            "end": 147,
+            "value": "10.20.0.15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-019",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 17,
+            "end": 56,
+            "value": "sarah.okonkwo@brightwell-partners.co.uk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-020",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 23,
+            "end": 37,
+            "value": "06 71 42 88 15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-021",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 32,
+            "end": 47,
+            "value": "+44 7700 900461"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-022",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 39,
+            "end": 67,
+            "value": "14 avenue Jean Jaur\u00e8s, 69007"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-023",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 51,
+            "end": 99,
+            "value": "2217 Maple Grove Drive, Apt 4B, Austin, TX 78704"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-024",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 47,
+            "end": 79,
+            "value": "ahmed.raza@lakeshore-textiles.pk"
+          },
+          {
+            "category": "CONTACT",
+            "start": 80,
+            "end": 95,
+            "value": "+92 300 5551234"
+          },
+          {
+            "category": "CONTACT",
+            "start": 108,
+            "end": 126,
+            "value": "lina.h@cedarbay.fr"
+          },
+          {
+            "category": "CONTACT",
+            "start": 127,
+            "end": 144,
+            "value": "+33 7 81 22 45 90"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-025",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "GOV_ID",
+            "start": 75,
+            "end": 96,
+            "value": "2 91 03 13 780 542 05"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-026",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "GOV_ID",
+            "start": 62,
+            "end": 73,
+            "value": "512-38-4417"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-027",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "GOV_ID",
+            "start": 36,
+            "end": 45,
+            "value": "19AV52310"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-028",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 44,
+            "end": 77,
+            "value": "FR32 4965 0930 7859 8189 5437 077"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-029",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "NETWORK",
+            "start": 28,
+            "end": 41,
+            "value": "192.168.40.12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-030",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "NETWORK",
+            "start": 23,
+            "end": 33,
+            "value": "172.20.3.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-031",
+      "correct": false,
+      "expected_alert": true,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-032",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "SOURCE_CODE",
+            "start": 49,
+            "end": 259,
+            "value": "def quote_premium(client):\n    base = client.fleet_size * RATE_TABLE[client.region]\n    if client.claims_last_3y > 2:\n        base *= LOYALTY_PENALTY\n    return round(base * (1 - client.negotiated_discount), 2)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-033",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "SOURCE_CODE",
+            "start": 22,
+            "end": 246,
+            "value": "export class FraudScoreService {\n  private readonly weights = loadInternalWeights('fraud-v7');\n  score(tx: Transaction): number {\n    return this.weights.velocity * tx.velocity + this.weights.geo * geoRisk(tx.country);\n  }\n}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-034",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "SOURCE_CODE",
+            "start": 43,
+            "end": 193,
+            "value": "SELECT agent_id, SUM(montant) * cfg.taux_secret AS commission\nFROM ventes JOIN config_commissions cfg ON cfg.niveau = ventes.niveau\nGROUP BY agent_id;"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-035",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 25,
+            "end": 41,
+            "value": "4814235327619839"
+          },
+          {
+            "category": "CONTACT",
+            "start": 75,
+            "end": 95,
+            "value": "m.tan@orchardline.sg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-036",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CREDENTIAL",
+            "start": 29,
+            "end": 83,
+            "value": "xoxb-2538802656-3324030316609-YIMO37yKxpyHumLznFxRVt23"
+          },
+          {
+            "category": "CONTACT",
+            "start": 94,
+            "end": 111,
+            "value": "+33 6 45 12 98 03"
+          },
+          {
+            "category": "NETWORK",
+            "start": 121,
+            "end": 130,
+            "value": "10.0.7.21"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-037",
+      "correct": true,
+      "expected_alert": true,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "PAYMENT",
+            "start": 30,
+            "end": 49,
+            "value": "4838 5608 9441 5468"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-038",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-039",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-040",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-041",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-042",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-043",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-044",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-045",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-046",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-047",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-048",
+      "correct": false,
+      "expected_alert": false,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 76,
+            "end": 109,
+            "value": "k.rehman@hazelbrook-logistics.com"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dev-049",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-050",
+      "correct": true,
+      "expected_alert": false,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    }
+  ],
+  "values": {
+    "expected": 42,
+    "strict_found": 38,
+    "lenient_found": 40,
+    "strict_rate": 0.9047619047619048,
+    "lenient_rate": 0.9523809523809523
+  },
+  "failures": [
+    {
+      "id": "dev-031",
+      "correct": false,
+      "expected_alert": true,
+      "actual_alert": false,
+      "result": {
+        "decision": "allow",
+        "findings": []
+      }
+    },
+    {
+      "id": "dev-048",
+      "correct": false,
+      "expected_alert": false,
+      "actual_alert": true,
+      "result": {
+        "decision": "alert",
+        "findings": [
+          {
+            "category": "CONTACT",
+            "start": 76,
+            "end": 109,
+            "value": "k.rehman@hazelbrook-logistics.com"
+          }
+        ]
+      }
+    }
+  ],
+  "llm": {
+    "judge_calls": 6,
+    "cache_hits": 0,
+    "model_requests": 6,
+    "model_failures": 0,
+    "true_decisions": 6,
+    "false_decisions": 0,
+    "hit_fraction": 0.12
+  }
+}
